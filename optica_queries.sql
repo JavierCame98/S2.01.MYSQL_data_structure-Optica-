@@ -16,15 +16,15 @@ JOIN brand b ON g.brand_id = b.brand_id;
 
 SELECT COUNT(sale_id) AS total_facturas
 FROM sale
-WHERE customer_id = 1
-  AND sale_date BETWEEN '2024-01-01' AND '2024-12-31';
+WHERE customer_id = 2
+  AND sale_date BETWEEN '2023-01-01' AND '2023-12-31';
 
 SELECT DISTINCT b.name AS modelo_marca
 FROM sale s
          JOIN glasses g ON s.glasses_id = g.glasses_id
          JOIN brand b ON g.brand_id = b.brand_id
-WHERE s.employee_id = 1
-  AND YEAR(s.sale_date) = 2024;
+WHERE s.employee_id = 2
+  AND YEAR(s.sale_date) = 2023;
 
 SELECT DISTINCT p.name AS proveedor
 FROM supplier p
