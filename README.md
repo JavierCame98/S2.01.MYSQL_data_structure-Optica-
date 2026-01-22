@@ -23,7 +23,7 @@ Database: MySQL / MariaDBModeling: MySQL Workbench (ER Diagram)
 Language: SQL
 
 ## Installation & Execution
-Clone the repository:Bashgit clone https://github.com/your-username/optica-cul-dampolla.git
+Clone the repository
 Import to MySQL:Open your MySQL Workbench or preferred database client.
 Import the .sql file located in the scripts/ folder.
 Execute the script to create the schema and populate it with sample data.
